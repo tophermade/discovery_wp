@@ -5,6 +5,8 @@ Discovery is a clean, simple WordPress theme for writers & WooCommerce shops.
 ## Notice
 If you just want to download and use Discovery, download a release rather than this repositiory. If you are comfortable with Gulp & theme development, then clone the repo and go nuts.
 
+[![Discovery](https://i.imgur.com/5m8EtL6.png)](https://i.imgur.com/5m8EtL6.png)
+
 ### Structure
 
 The `/base/` folder contains the basic components for styling. These will contain the broad stroke styles that are applicable to most of the basic elements. For example you'll set the base font, line heights, typical heading styles, etc in `_typography`. Generic classes typically would live inside `_base`, and general form styling in `_forms`.
