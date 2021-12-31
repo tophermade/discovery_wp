@@ -1,0 +1,92 @@
+.introduction{
+	position: relative;
+	background: #fff;
+	color: var(--introductionContent);
+
+	.inner{
+		position: relative;
+		padding: 40px 0;
+		display: flex;
+		justify-content: end;
+	}
+
+	figure{
+		width: 35%;
+		padding:0;
+		margin:0;
+		text-align: right;
+		img{
+			float: right;
+			width: 120%;
+			max-width: 120%;
+			right:0;
+		}
+	}
+
+	article{
+		width: 65%;
+		box-sizing: border-box;
+		padding: 15px 10% 0 20px;
+	}
+
+	.intro{
+		text-transform: uppercase;
+		font-size: 1.1rem;
+	}
+
+	.title{
+		position: relative;
+		font-size: 3rem;
+		line-height: 1em;
+		padding-bottom: 45px;
+		color: var(--introductionTitle);
+
+		a{
+			color: var(--introductionTitle);
+		}
+		
+		&:after{
+			position: absolute;
+			bottom: 20px;
+			left: 0;
+			height: 1px;
+			background: #ddd;
+			width: 40px;
+			display: block;
+			content:'';
+		}
+	}
+}
+
+
+.tablet({
+	.introduction{
+		.inner{
+			align-items: center;
+		}
+
+		.title{
+			font-size: 4rem;
+		}
+
+		article{
+			width: 50%;
+			padding: 15px 5% 0 5%;
+			align-items: center;
+		}
+
+		figure{
+			width: 50%;
+		}
+	}
+});
+
+
+.desktop({
+	.introduction{
+		font-size: 1.8rem;
+		.title{
+			font-size: 5rem;
+		}
+	}
+});

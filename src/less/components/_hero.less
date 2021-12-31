@@ -1,0 +1,58 @@
+.hero{
+	position: relative;
+	padding: 80px 20px;
+	text-align: center;
+	color: #fff;
+	background: #fff;
+	border-bottom: 40px solid #fff;
+
+	&:before{
+		position: absolute;
+		top:0;
+		left:0;
+		bottom:0;
+		right: 0;
+		background: rgba(0,0,0,.2);
+		content:"";
+	}
+
+	.intro{
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 1.3rem;
+	}
+
+	.title{
+		padding-bottom: 25px;
+		font-weight: bold;
+	}
+
+	a{
+		color: #fff;
+	}
+}
+
+.tablet({
+	.hero{
+		padding: 120px 40px;
+		.title{
+			font-size: 5rem;
+			padding-bottom: 40px;
+			font-weight: normal;
+		}
+	}
+});
+
+.desktop({
+	.hero{
+		padding: 130px 40px;
+		
+		.inner{
+			max-width: 900px;
+		}
+
+		.title{
+			font-size: 6rem;
+		}
+	}
+});

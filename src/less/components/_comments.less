@@ -1,0 +1,51 @@
+.comments{
+	position: relative;
+	padding: 60px 0;
+	margin: auto;
+	max-width: 650px;
+
+	.single-comment{
+		color: var(--postContent);
+		+ .single-comment{
+			padding-top: 45px;
+		}
+	}
+
+	.comment-meta{
+		color: var(--postContent);
+
+		strong{
+			font-size: 2.2rem;
+			.heading;
+			font-weight: normal;
+			color: var(--postLinkHover);
+		}
+
+		span{
+			&:before{
+				content:"•";
+				margin: 0 6px;
+			}
+		}
+	}
+
+	.comment-content{
+		a{
+			color: var(--accentColor);
+			text-decoration: underline;
+		}
+	}
+
+	.comment-actions{
+		font-size: 12px;
+		font-weight: bold;
+		padding-top: 8px;
+
+		a{
+			color: var(--postLinkHover);
+			border-top: 1px solid var(--postLinkHover);
+			padding-top: 5px;
+			display: inline-block;
+		}
+	}
+}

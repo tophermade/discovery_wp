@@ -1,0 +1,186 @@
+<!doctype html>
+<html class='no-js' lang='en'>
+<head>
+	<style>
+		:root {
+			--navBackground: #222;
+			--navLink: #fff;
+			--navLinkHover: #fff;
+			--navLinkBackgroundHover: #df4c34;
+
+			--introductionTitle: #222;
+			--introductionContent: #989898;
+
+			--buttonBackground: #222222;
+			--buttonHoverBackground: #222;
+			--buttonText: #fff;
+			--buttonHoverText: #999;
+			
+			--footerBackground: #222;
+			--footerText: #fff;
+			--footerLink: #fff;
+			--footerLinkHover: #999;
+			--footerLinkBackgroundHover: #222;
+
+			--categoryLink: #222;
+			--categoryLinkHover: #fff;
+			--categoryLinkBackgroundHover: #222;
+
+			--indicatorBackground: #df4c34;
+			--indicatorColor: #fff;
+
+			--postContent: #777;
+			--postLink: #222;
+			--postLinkHover: #222;
+			--postLinkHoverBackground: #fff;
+
+			--accentColot: #df4c34;
+
+			--blue: #1e90ff;
+			--white: #ffffff;
+		}
+	</style>
+	<meta charset='utf-8'>
+	<title></title>
+	<meta name='description' content=''>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+	<meta property='og:title' content=''>
+	<meta property='og:type' content=''>
+	<meta property='og:url' content=''>
+	<meta property='og:image' content=''>
+
+	<meta name='theme-color' content='#fafafa'>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script&family=Fasthand&family=Inter:wght@100;400;700&family=Playfair+Display:ital@0;1&family=Source+Serif+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+	<link id='site-less' rel='stylesheet/less' href='src/less/style.less' media='screen' />
+</head>
+<body>
+<!-- begin markup -->
+
+
+<div id='site-frame'>
+
+	<nav id='nav'>
+		<div class='inner'>
+			<div class='the-menus'>
+				<div id='grip'><i class="bi bi-list"></i></div>
+
+				<div class='nav-search'>
+					<i class="bi-search"></i>
+					<input type='text' name='search' />
+				</div>
+
+				<div class='nav-cart'>
+					<a href='#'><i class="bi bi-cart"></i> <span>(1)</span></a>
+				</div>
+
+				<div class='nav-main'>
+					<ul>
+						<li><a href='#'>Blog</a></li>
+						<li><a href='#'>Shop</a></li>
+						<li><a href='#'>Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav><!-- e: nav -->
+
+
+	<header id='header'>
+		<div class='inner'>
+			<strong>Super Stuff</strong>
+		</div>
+	</header><!-- e: header -->
+
+
+	<section id="category-bar">
+		<div class="inner">
+			<ul>
+				<li><a href="#">Wood Working</a></li>
+				<li><a href="#">Video Games</a></li>
+				<li><a href="#">Travel</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Downloads</a></li>
+			</ul>
+		</div>
+	</section><!-- e: category bar -->
+
+
+	<section class='latest'>
+		<div class='inner'>
+			<h3 class='section-title'>Latest Posts</h3>
+			<div class='section-main'>
+				
+				<div class='card post'>
+					<a href='#'>
+						<figure>
+							<img src='/assets/pexels-noelle-otto-906054.jpg' alt='' />
+						</figure>
+						<span class='date'>Dec 19, 2021</span>
+						<h3 class='title'>
+							Hi. I'm Jasmine.
+						</h3>
+					</a>
+				</div>
+				
+			</div>
+		</div>
+	</section><!-- e: latest posts -->
+
+
+	<section class="pagination">
+		<div class="inner">
+			<a href="#" class="button">Previous</a>
+			<a href="#" class="button">Next</a>
+		</div>
+	</section>
+
+
+	<footer id='footer'>
+		<div class='inner'>
+			<nav id='footer-nav'>
+				<div class='site-links'>
+					<ul>
+						<li><a href='#'>Blog</a></li>
+						<li><a href='#'>Shop</a></li>
+						<li><a href='#'>Contact</a></li>
+					</ul>
+				</div>
+
+				<div class='social-links'>
+					<ul>
+						<li><a href='#'><i class="bi-facebook"></i></a></li>
+						<li><a href='#'><i class="bi-twitter"></i></a></li>
+						<li><a href='#'><i class="bi-instagram"></i></a></li>
+						<li><a href='#'><i class="bi-snapchat"></i></a></li>
+						<li><a href='#'><i class="bi-tiktok"></i></a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div id='copyright'>
+				<strong>Super Stuff</strong>
+				<p>&copy; 2022 SuperStuff.co - All Rights Reserved</p>
+			</div>
+		</div>
+	</footer><!-- e: footer -->
+</div>
+
+
+<!-- e: markup -->
+
+<!-- remove clientside LESS for production -->
+<script>less = { env: 'development'};</script>
+<script src='/tools/less.js'></script>
+<script>less.watch();</script>
+
+<!-- JS -->
+<script src='/src/js/jquery-3.6.0.min.js'></script>
+<script src='/src/js/script.js'></script>
+
+</body>
+</html>

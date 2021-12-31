@@ -1,0 +1,101 @@
+.single-product + .products{
+	background: #fff;
+}
+
+.products{
+	background: #eef0f0;
+	padding: 40px 0;
+	text-align: center;
+
+	.product{
+		margin: auto;
+		a{
+			display: block;
+			padding: 10px 0 28px;
+			margin-bottom: 20px;
+			color: var(--navBackground);
+		}
+	}
+
+	figure{
+		padding: 10px;
+		background: #fff;
+		margin: 0 0 20px 0;
+		
+		img{
+			display: block;
+		}
+	}
+
+	.date{
+		text-transform: uppercase;
+		font-size: 1.1rem;
+		display: block;
+		color: #999;
+	}
+
+	.title{
+		font-size: 1.8rem;
+		padding-bottom: 4px;
+	}
+
+	.cost{
+		display: block;
+		color: #555;
+	}
+}
+
+
+.tablet({
+	.products{
+		padding: 80px 0 100px;
+		.section-main{
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+	
+		.product{
+			width: 33%;
+			box-sizing: border-box;
+			padding: 0 10px;
+
+			a{
+				padding-bottom: 0;
+				margin-bottom: 50px;
+				img, .title, .cost, figure{
+					transition: ease all .4s;
+				}
+				&:hover{
+					figure{
+						transform: translate(0, -4px);
+					}
+
+					.title{
+						transform: translate(0, 3px)
+					}
+
+					.cost{
+						transform: translate(0, 2px)
+					}
+				}
+			}
+		}
+
+		figure{
+			padding-bottom: 10px;
+		}
+	
+		.title{
+			font-size: 2.2rem;
+		}
+	}
+});
+
+.desktop({
+	.products{
+		.title{
+			font-size: 3rem;
+		}
+	}
+});
